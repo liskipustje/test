@@ -59,12 +59,15 @@
  * 3. Responsiveness/media queries
  *--------------------------------------------------
  */
+.debug:after {
+        content: "XS";
+    }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (min-width: 768px) {
     /* Small devices (tablets, 768px and up) */
     .debug:after {
-        content: " SM";
+        content: "SM";
     }
 
     #highlighted {
@@ -75,7 +78,7 @@
 @media (min-width: 992px) {
     /* Medium devices (desktops, 992px and up) */
     .debug:after {
-        content: " MD";
+        content: "MD";
     }
     #highlighted {
         margin-top: 160px; /*Zaradi headerja se potisne nazaj dol 160px*/
@@ -85,7 +88,7 @@
 @media (min-width: 1200px) {
     /* Large devices (large desktops, 1200px and up) */
     .debug:after {
-        content: " LG";
+        content: "LG";
     }
 }
 /*
